@@ -12,4 +12,13 @@ void main() {
   print(listaNova);
 
   //any
+
+  print('.any');
+  final listaBusca = ['Rodrigo', 'João', 'josé'];
+
+  if (listaBusca.any((nome) => nome == 'João')) {
+    print('Tem João');
+  } else {
+    print('Não tem João');
+  }
 }
