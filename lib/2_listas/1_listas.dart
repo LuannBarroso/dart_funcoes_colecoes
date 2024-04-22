@@ -21,4 +21,14 @@ void main() {
   } else {
     print('Não tem João');
   }
+
+  // every
+  print('.every');
+  final listaBusca2 = ['Rodrigo', 'João', 'José'];
+
+  if (listaBusca2.every((nome) => nome.contains('J'))) {
+    print('Todos os nomes tem a letra J');
+  } else {
+    print('Nem todos os nomes tem a letra J');
+  }
 }
