@@ -84,4 +84,33 @@ void main() {
     // }
   });
   print(listaPacientes);
+
+// Pacientes por funcão
+
+  print('Pacientes por funcão');
+  var listaPacientes2 = [
+    'Luan Barroso |29',
+    'Luana Barroso |35',
+    'Guilherme |18',
+    'Pedro Virtosa |15',
+    'Antonio Madeira|48',
+  ];
+  print('Antes ');
+  print(listaPacientes2);
+  funcaoQualquer(listaPacientes2);
+  print('Depois');
+  print(listaPacientes2);
+}
+
+void funcaoQualquer(List<String> pacientes) {
+  pacientes.sort((paciente1, paciente2) {
+    final pacienteDados1 = paciente1.split('|');
+    final pacienteDados2 = paciente2.split('|');
+
+    final idadePaciente1 = int.parse(pacienteDados1[1]);
+    final idadePaciente2 = int.parse(pacienteDados2[1]);
+
+    return idadePaciente1.compareTo(idadePaciente2);
+  });
+  print(pacientes);
 }
