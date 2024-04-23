@@ -7,6 +7,8 @@ void main() {
   var nome = 'macaquito';
   var idade = 13;
   //Função anonima
+  print(nome);
+  print(idade);
   var funcaoQualquer = () {
     print('chamou um macaquito de macaquito');
     return '2132134135';
