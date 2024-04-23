@@ -42,4 +42,10 @@ void main() {
   print(nomes1.intersection(nomes2));
 
   //Dessa forma será somente printado o Rodrigo na tela, pois o unico nome igual nas duas variáveis é Rodrigo.
+
+  print('lookup');
+
+  print(nomes1.lookup('Wilian'));
+  print(nomes2.lookup('Matheus'));
+  print(numerosSet.lookup(1));
 }
