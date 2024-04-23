@@ -26,7 +26,20 @@ void main() {
   print('.diference()');
   print(numeros1.difference(numeros2));
 
-//Usando o union será printado na tela a diferença oq nao tem na outra variavel, no caso do exemplo seria o numero 5,7.
+//Usando o union, será printado na tela a diferença oq nao tem na outra variavel, no caso do exemplo seria o numero 5,7.
   print('.union');
   print(numeros1.union(numeros2));
+
+//Usando o .intersection, será printado na tela os numeros iguais das duas variáveis.
+  print('.intersection');
+  print(numeros1.intersection(numeros2));
+
+  //Outro exemplo
+
+  var nomes1 = {'Rodrigo', 'Luan', 'Wilian'};
+  var nomes2 = {'Matheus', 'Guilherme', 'Rodrigo'};
+
+  print(nomes1.intersection(nomes2));
+
+  //Dessa forma será somente printado o Rodrigo na tela, pois o unico nome igual nas duas variáveis é Rodrigo.
 }
