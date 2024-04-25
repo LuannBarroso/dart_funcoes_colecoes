@@ -62,4 +62,19 @@ void main() {
     return MapEntry(key + '_novo', value.toUpperCase());
   });
   print(novoMapaProdutos);
+
+  var mapa = <String, Object>{
+    'nome': 'Luan Barroso',
+    'curos': [
+      {
+        'nome': 'Academia do Flutter',
+        'descricao': 'Melhor Cuso de flutter do Brasil'
+      },
+      {
+        'nome': 'Arquiteto Flutter',
+        'descricao': 'Melhor Cuso de flutter do Brasil'
+      }
+    ]
+  };
+  print(mapa['{descricao}']);
 }
