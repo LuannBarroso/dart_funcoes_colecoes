@@ -1,3 +1,6 @@
+import 'dart:ffi';
+import 'dart:html';
+
 void main() {
   // Mapa é uma representação de Chave: Valor
   final paciente = <String, String>{
@@ -33,4 +36,9 @@ void main() {
   //Recuperando o valor;
   print('Produto ${produtos['nome']}');
   print('Preco ${produtos['preco']}');
+
+  // forEach não pode ser utilizando quando for utilizar alguma requisição assincrona!!!!!
+  produtos.forEach((key, value) {
+    print('Chave: $key: $value');
+  });
 }
