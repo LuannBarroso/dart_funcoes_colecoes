@@ -1,5 +1,3 @@
-import 'dart:io';
-
 void main() {
   // Mapa é uma representação de Chave: Valor
   final paciente = <String, String>{
