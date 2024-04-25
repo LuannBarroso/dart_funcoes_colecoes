@@ -55,4 +55,11 @@ void main() {
   for (var value in produtos.values) {
     print('Valores: $value');
   }
+
+  // Mapa também pode receber uma transformação, porém você precisa retonar um map.entry que será terá uma key an value.
+
+  var novoMapaProdutos = produtos.map((key, value) {
+    return MapEntry(key + '_novo', value.toUpperCase());
+  });
+  print(novoMapaProdutos);
 }
