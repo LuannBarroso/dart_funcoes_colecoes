@@ -44,8 +44,9 @@ void main() {
   //Dessa forma será somente printado o Rodrigo na tela, pois o unico nome igual nas duas variáveis é Rodrigo.
 
   print('lookup');
-
   print(nomes1.lookup('Wilian'));
   print(nomes2.lookup('Matheus'));
   print(numerosSet.lookup(1));
+
+  // Aqui podemos encontrar uma forma de realizar uma busca de alguma informação de nossas variaveis, caso tenha essa informação será printado na tela ao informar lookup.
 }
