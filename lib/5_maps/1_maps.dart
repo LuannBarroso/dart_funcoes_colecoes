@@ -1,3 +1,5 @@
+import 'dart:io';
+
 void main() {
   // Mapa é uma representação de Chave: Valor
   final paciente = <String, String>{
@@ -34,8 +36,23 @@ void main() {
   print('Produto ${produtos['nome']}');
   print('Preco ${produtos['preco']}');
 
-  // forEach não pode ser utilizando quando for utilizar alguma requisição assincrona!!!!!
+  // Utilizando forEach não pode ser utilizando quando for utilizar alguma requisição assyncrona!!!!!
+  print('Utilizando forEach');
   produtos.forEach((key, value) {
     print('Chave: $key: $value');
   });
+
+  // Pode utilizar o for in caso tenha algum processo assyncrono dentro dele.
+  print('Utilizando for in');
+  for (var entry in produtos.entries) {
+    print('Chave: ${entry.key}: ${entry.value}');
+  }
+  print('Utilizando for in para listar somente as chaves');
+  for (var key in produtos.keys) {
+    print('Chave: $key');
+  }
+  print('Utilizando for in para listar somente as keys');
+  for (var value in produtos.values) {
+    print('Valores: $value');
+  }
 }
