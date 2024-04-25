@@ -29,4 +29,8 @@ void main() {
   print(produtos);
 
   produtos.update('preco', (value) => '10', ifAbsent: () => '10');
+
+  //Recuperando o valor;
+  print('Produto ${produtos['nome']}');
+  print('Preco ${produtos['preco']}');
 }
