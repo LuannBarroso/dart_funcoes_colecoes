@@ -11,6 +11,17 @@ void main() {
 
   //A parti da versão 2.15
   print(Cores.azul.name);
+  var corAzul215 = Cores.values.byName(azul);
+  print(corAzul215);
+
+  var coresMap = Cores.values.asMap();
+  print(coresMap);
+
+  var coresNameMap = Cores.values.asNameMap();
+  print(coresNameMap);
+
+  var corAzulPeloMap = coresNameMap[azul];
+  print(corAzulPeloMap);
 }
 
 enum Cores { azul, vermelho, laranja, verde, preto }
